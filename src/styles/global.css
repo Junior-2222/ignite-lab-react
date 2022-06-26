@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CMS = Content Management System
+
+// Traz tanto o painel de ADMIN quanto a parte visual do front-end(temas)
+
+// Headless CMS (GraphCMS): Painel de ADMIN (dados fornecidos através de uma API REST ou GraphQL)
+// React que consome essa API do CMS
+
+// query(buscar dados) / mutation(criar,alterar ou deletar dados)
+
+
+/*.title{
+   @apply text-5xl font-bold text-violet-500;
+}*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --green-dark: hsl(162, 97%, 19%);
+  --green: hsl(162, 100%, 26.5%);
+  --green-light: hsl(162.5, 100%, 35%);
+  --blue: hsl(196, 88%, 73.8%);
+  --warning: 	hsl(32, 96%, 64.1%);
+  --red-error: 	hsl(354.6, 91%, 66.2%);
+  --background: hsl(240, 5%, 4%);
+  --elements: hsl(240, 5%, 7.5%);
+  --bars: hsl(240, 5%, 7.5%);
+  --border: hsl(240, 6%, 17%);
+  --stroke-divider: 	hsl(240, 6%, 20.7%);
+  --tittle: hsl(241, 10%, 89.2%);
+  --text: 	hsl(240, 7%, 78.5%);
+  --text-apoio: 	hsl(240, 5.5%, 57.5%);
+  --white: hsl(0, 0%, 100%);
+  --font: "Roboto";
+  font-size:6.25%;
+
+  /*text-[length:12rem]*/
+}
+
+body {
+  font-family: var(--font), sans-serif;
+  line-height: 160%;
+  @apply 
+  text-[16rem]
+  bg-colorBg 
+  text-colorTittle
+  antialiased;
+}
